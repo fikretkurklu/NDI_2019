@@ -18,7 +18,7 @@ import { WhoareweComponent } from './whoarewe/whoarewe.component';
 const appRoutes: Routes = [
   {path : "", component : HomepageComponent},
 
-  {path : "Whoarewe", component : WhoareweComponent}
+  {path : "Whoarewe", component : WhoareweComponent},
 
   // ### ###
   {path : "Apl", component : APLComponent},
@@ -44,7 +44,7 @@ const appRoutes: Routes = [
     BourseCritereSociauxComponent,
     BourseErasmusComponent,
     CrousComponent,
-    CrousNiv2Component
+    CrousNiv2Component,
     WhoareweComponent
   ],
   imports: [
