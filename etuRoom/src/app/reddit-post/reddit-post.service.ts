@@ -17,8 +17,8 @@ export class RedditPostService {
       (response) => {
         response["data"].children.forEach(elem => posts.push({
           title: elem.data.title,
-          name: elem.data.name,
-          tag: elem.data.link_flair_text
+          tag: elem.data.link_flair_text,
+          url: elem.data.url
         }));
       },
       (error) => {
