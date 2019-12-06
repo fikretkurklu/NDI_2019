@@ -1,7 +1,3 @@
-<p>
-  result-search works!
-</p>
-
 <ul *ngFor="let data of dataset | filter: searchText">
   <li class="list-group-item"><a routerLink={{data.link}} >{{ data.title }}</a></li>
 </ul>
