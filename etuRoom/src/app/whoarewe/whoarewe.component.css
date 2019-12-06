@@ -1,15 +1,13 @@
-footer{
+footer {
+  background: #ccc;
 
-    background:#ccc;
-    
-    position:absolute;
-    
-    bottom:0;
-    
-    width:100%;
-    
-    padding-top:50px;
-    
-    height:75px;
-    
-    }
+  position: fixed;
+
+  bottom: 0;
+
+  width: 100%;
+
+  padding-top: 50px;
+
+  height: 75px;
+}
