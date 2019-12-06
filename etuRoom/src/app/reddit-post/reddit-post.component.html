@@ -1,0 +1,12 @@
+<div>
+  <ul class="list-group">
+    <ng-container *ngFor="let post of posts">
+        <!-- <ng-container *ngIf="post.tag === 'Aides/Logement'"> -->
+        <ng-container *ngIf="post.tag === cat_tag">
+          <li class="list-group-item mb-3 _link_li" ><a class="_link" href={{post.url}} target="_blank">{{ post.title }}</a></li>
+      </ng-container>
+    </ng-container>
+    <li class="list-group-item text-uppercase" ><a class="_link _link_other" href="https://www.reddit.com/r/Eturoom/" target="_blank">Voir plus de posts</a></li>
+    <li class="list-group-item text-uppercase"><a class="_link _link_other" href="https://www.reddit.com/r/Eturoom/submit" target="_blank">Poser une question</a></li>
+  </ul>
+</div>
