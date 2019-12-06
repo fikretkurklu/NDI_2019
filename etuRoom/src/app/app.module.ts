@@ -20,6 +20,7 @@ import { WhoareweComponent } from "./whoarewe/whoarewe.component";
 import { FilterPipe } from './filter.pipe';
 import { FormsModule } from '@angular/forms';
 import { ResultSearchComponent } from './result-search/result-search.component'
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   { path: "Bourse", component: BourseComponent },
   { path: "Whoarewe", component: WhoareweComponent },
   {path: "ResultSearch", component : ResultSearchComponent},
+  {path : "Aboutus", component : AboutusComponent},
 
   // ### ###
   { path: "Apl", component: APLComponent },
@@ -60,7 +62,8 @@ const appRoutes: Routes = [
     BourseErasmusComponent,
     CrousComponent,
     CrousNiv2Component,
-    WhoareweComponent
+    WhoareweComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
