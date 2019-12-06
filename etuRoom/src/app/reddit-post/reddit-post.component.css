@@ -1,0 +1,16 @@
+._link{
+    text-decoration: none;
+    color : black;
+}
+
+._link_li{
+    background-color: lightgrey;
+}
+._link:hover{
+    text-decoration: none;
+    color : lightseagreen;
+}
+
+._link_other{
+    font-size: 70%;
+}
