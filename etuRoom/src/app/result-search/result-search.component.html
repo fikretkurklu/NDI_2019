@@ -1,3 +1,11 @@
-<ul *ngFor="let data of dataset | filter: searchText">
-  <li class="list-group-item"><a routerLink={{data.link}} >{{ data.title }}</a></li>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-sm"> 
+     <div class="bg" style="margin-top: 5%; padding: 3% 6% 3% 3%;">
+       <ul *ngFor="let data of dataset | filter: searchText">
+         <li class="list-group-item"><a routerLink={{data.link}} >{{ data.title }}</a></li>
+       </ul>
+     </div>
+    </div>
+ </div>
+</div>
