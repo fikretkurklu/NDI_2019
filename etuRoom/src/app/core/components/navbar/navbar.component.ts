@@ -9,9 +9,9 @@ import { TranslateService } from "@ngx-translate/core";
 export class NavbarComponent implements OnInit {
   constructor(public translate: TranslateService) {
     translate.addLangs(["en", "fr"]);
-    translate.setDefaultLang("en");
+    translate.setDefaultLang("fr");
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|fr/) ? browserLang : "en");
+    translate.use(browserLang.match(/en|fr/) ? browserLang : "fr");
   }
 
   ngOnInit() {}
