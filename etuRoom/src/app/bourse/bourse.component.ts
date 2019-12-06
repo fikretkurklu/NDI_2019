@@ -7,7 +7,7 @@ import { RedditPostComponent } from '../reddit-post/reddit-post.component';
   styleUrls: ['./bourse.component.css']
 })
 export class BourseComponent implements OnInit {
-  tag: String = "Aides/Logement";
+  tag: String = "";
 
   constructor() { }
 

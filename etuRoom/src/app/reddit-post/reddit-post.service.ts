@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RedditPostService {
   // configUrl = 'assets/config.json';
-  configUrl = 'https://www.reddit.com/r/Eturoom/top/.json?count=20';
+  configUrl = 'https://www.reddit.com/r/Eturoom/new/.json';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -20,6 +20,8 @@ export class RedditPostService {
           tag: elem.data.link_flair_text,
           url: elem.data.url
         }));
+
+        console.log(posts);
       },
       (error) => {
         console.log('Erreur !' + error)
