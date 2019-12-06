@@ -1,0 +1,12 @@
+<div>
+  <ul>
+    <ng-container *ngFor="let post of posts">
+        <ng-container *ngIf="post.tag === 'Aides/Logement'">
+          <li>{{ post.title }}</li>
+      </ng-container>
+    </ng-container>
+  </ul>
+</div>
+<div>
+  <a href="https://www.reddit.com/r/Eturoom/submit" target="_blank">Add Reddit post</a>
+</div>
