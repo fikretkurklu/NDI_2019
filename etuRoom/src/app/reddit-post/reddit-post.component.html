@@ -1,7 +1,8 @@
 <div>
   <ul>
     <ng-container *ngFor="let post of posts">
-        <ng-container *ngIf="post.tag === 'Aides/Logement'">
+        <!-- <ng-container *ngIf="post.tag === 'Aides/Logement'"> -->
+        <ng-container *ngIf="post.tag === cat_tag">
           <li><a href={{post.url}} target="_blank">{{ post.title }}</a></li>
       </ng-container>
     </ng-container>

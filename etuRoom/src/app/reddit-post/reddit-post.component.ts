@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, Input } from '@angular/core';
 import { RedditPostService } from './reddit-post.service';
 
 @Component({
@@ -9,10 +9,17 @@ import { RedditPostService } from './reddit-post.service';
 export class RedditPostComponent implements OnInit {
   posts;
 
-  constructor(private redditPostService: RedditPostService) { }
+  @Input() 
+  cat_tag : String;
+
+  constructor(private redditPostService: RedditPostService) {
+    // // this.cat_tag = tag;
+    // this.cat_tag = "Aides/Logement";
+   }
 
   ngOnInit() {
     this.posts = this.redditPostService.getSubReddit();
+    // this.cat_tag = "Aides/Logement";
   }
 
 }
