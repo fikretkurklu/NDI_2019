@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./distributions-alimentaires.component.css']
 })
 export class DistributionsAlimentairesComponent implements OnInit {
+  tag: String = "Assoc/DistribAlimentaires";
 
   constructor() { }
 

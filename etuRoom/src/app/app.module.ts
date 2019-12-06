@@ -9,7 +9,6 @@ import { Routes, RouterModule } from "@angular/router";
 import { BourseComponent } from "./bourse/bourse.component";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { APLComponent } from "./apl/apl.component";
 import { AidesExeptionnellesComponent } from "./aides-exeptionnelles/aides-exeptionnelles.component";
 import { BourseCritereSociauxComponent } from "./bourse-critere-sociaux/bourse-critere-sociaux.component";
@@ -98,9 +97,6 @@ import { RedditPostComponent } from './reddit-post/reddit-post.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-<<<<<<< HEAD
-    RouterModule.forRoot(appRoutes)
-=======
     RouterModule.forRoot(appRoutes),
     TranslateModule.forRoot({
       loader: {
@@ -109,7 +105,6 @@ import { RedditPostComponent } from './reddit-post/reddit-post.component';
         deps: [HttpClient]
       }
     })
->>>>>>> dev
   ],
   providers: [],
   bootstrap: [AppComponent]

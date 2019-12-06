@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./le-bon-coin.component.css']
 })
 export class LeBonCoinComponent implements OnInit {
-
+  tag: String = "Logement/LeBonCoin";
+  
   constructor() { }
 
   ngOnInit() {

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ameli.component.css']
 })
 export class AmeliComponent implements OnInit {
-
+  tag : String = "Santé/Ameli";
   constructor() { }
 
   ngOnInit() {
