@@ -7,10 +7,14 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import {Routes, RouterModule} from "@angular/router";
 import { BourseComponent } from './bourse/bourse.component';
+import { FilterPipe } from './filter.pipe';
+import { FormsModule } from '@angular/forms';
+import { ResultSearchComponent } from './result-search/result-search.component'
 
 const appRoutes: Routes = [
   {path : "", component : HomepageComponent},
-  {path : "Bourse", component : BourseComponent}
+  {path : "Bourse", component : BourseComponent},
+  {path: "ResultSearch", component : ResultSearchComponent}
 ];
 
 @NgModule({
@@ -18,12 +22,15 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    BourseComponent
+    BourseComponent,
+    FilterPipe,
+    ResultSearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,7 +9,7 @@ export class BourseComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit(){
+   }
 
 }
