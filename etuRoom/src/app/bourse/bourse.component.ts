@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RedditPostComponent } from '../reddit-post/reddit-post.component';
 
 @Component({
   selector: 'app-bourse',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bourse.component.css']
 })
 export class BourseComponent implements OnInit {
+  tag: String = "";
 
   constructor() { }
 

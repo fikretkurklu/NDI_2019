@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bourse-erasmus.component.css']
 })
 export class BourseErasmusComponent implements OnInit {
+  tag: String = "Aides/Bourses";
 
   constructor() { }
 
