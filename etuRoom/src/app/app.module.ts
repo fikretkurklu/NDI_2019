@@ -7,10 +7,12 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import {Routes, RouterModule} from "@angular/router";
 import { BourseComponent } from './bourse/bourse.component';
+import { WhoareweComponent } from './whoarewe/whoarewe.component';
 
 const appRoutes: Routes = [
   {path : "", component : HomepageComponent},
-  {path : "Bourse", component : BourseComponent}
+  {path : "Bourse", component : BourseComponent},
+  {path : "Whoarewe", component : WhoareweComponent}
 ];
 
 @NgModule({
@@ -18,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    BourseComponent
+    BourseComponent,
+    WhoareweComponent
   ],
   imports: [
     BrowserModule,
