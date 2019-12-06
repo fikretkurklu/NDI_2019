@@ -13,9 +13,12 @@ import { BourseCritereSociauxComponent } from './bourse-critere-sociaux/bourse-c
 import { BourseErasmusComponent } from './bourse-erasmus/bourse-erasmus.component';
 import { CrousComponent } from './crous/crous.component';
 import { CrousNiv2Component } from './crous-niv2/crous-niv2.component';
+import { WhoareweComponent } from './whoarewe/whoarewe.component';
 
 const appRoutes: Routes = [
   {path : "", component : HomepageComponent},
+
+  {path : "Whoarewe", component : WhoareweComponent}
 
   // ### ###
   {path : "Apl", component : APLComponent},
@@ -27,6 +30,7 @@ const appRoutes: Routes = [
   // #### Logement ###
   {path : "Crous", component : CrousComponent},
   {path : "Crous/leCrous", component : CrousNiv2Component},
+
 ];
 
 @NgModule({
@@ -41,6 +45,7 @@ const appRoutes: Routes = [
     BourseErasmusComponent,
     CrousComponent,
     CrousNiv2Component
+    WhoareweComponent
   ],
   imports: [
     BrowserModule,
