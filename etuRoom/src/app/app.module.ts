@@ -9,7 +9,6 @@ import { Routes, RouterModule } from "@angular/router";
 import { BourseComponent } from "./bourse/bourse.component";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { APLComponent } from "./apl/apl.component";
 import { AidesExeptionnellesComponent } from "./aides-exeptionnelles/aides-exeptionnelles.component";
 import { BourseCritereSociauxComponent } from "./bourse-critere-sociaux/bourse-critere-sociaux.component";
@@ -69,9 +68,13 @@ const appRoutes: Routes = [
   { path: "Soutien", component: SoutienComponent },
 ];
 
+import { HttpClient, HttpParams, HttpClientModule } from '@angular/common/http';
+import { RedditPostComponent } from './reddit-post/reddit-post.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    RedditPostComponent,
     NavbarComponent,
     HomepageComponent,
     BourseComponent,
@@ -95,6 +98,7 @@ const appRoutes: Routes = [
     CnousComponent,
     AboutusComponent
   ],
+ 
   imports: [
     BrowserModule,
     AppRoutingModule,

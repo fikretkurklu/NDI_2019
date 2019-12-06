@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./crous.component.css']
 })
 export class CrousComponent implements OnInit {
+  tag: String = "Logement/CROUS";
 
   constructor() { }
 

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./apl.component.css']
 })
 export class APLComponent implements OnInit {
+  tag: String = "Aides/Logement";
 
   constructor() { }
 
