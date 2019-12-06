@@ -17,6 +17,15 @@ import { BourseErasmusComponent } from "./bourse-erasmus/bourse-erasmus.componen
 import { CrousComponent } from "./crous/crous.component";
 import { CrousNiv2Component } from "./crous-niv2/crous-niv2.component";
 import { WhoareweComponent } from "./whoarewe/whoarewe.component";
+import { LeBonCoinComponent } from './le-bon-coin/le-bon-coin.component';
+import { AmeliComponent } from './ameli/ameli.component';
+import { CentreSanteComponent } from './centre-sante/centre-sante.component';
+import { DistributionsAlimentairesComponent } from './distributions-alimentaires/distributions-alimentaires.component';
+import { SoutienComponent } from './soutien/soutien.component';
+import { AidesFinancieresComponent } from './aides-financieres/aides-financieres.component';
+import { AidesLogementComponent } from './aides-logement/aides-logement.component';
+import { AidesSocialesComponent } from './aides-sociales/aides-sociales.component';
+import { CnousComponent } from './cnous/cnous.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -27,19 +36,31 @@ const appRoutes: Routes = [
   { path: "Bourse", component: BourseComponent },
   { path: "Whoarewe", component: WhoareweComponent },
 
-  // ### ###
+  // ### Aides Etudiantes###
+  { path: "AidesFinancieres", component: AidesFinancieresComponent },
+  { path: "Bourse/CrousCnous", component: CnousComponent },
+
+  { path: "AidesLogement", component: AidesLogementComponent },
+  { path: "AidesSociales", component: AidesSocialesComponent },
+
   { path: "Apl", component: APLComponent },
-  { path: "AidesExeptionnelles", component: AidesExeptionnellesComponent },
+  // { path: "AidesExeptionnelles", component: AidesExeptionnellesComponent },
   { path: "Bourse", component: BourseComponent },
   { path: "Bourse/BourseErasmus", component: BourseErasmusComponent },
-  {
-    path: "Bourse/BourseCriteresSociaux",
-    component: BourseCritereSociauxComponent
-  },
+  // {path: "Bourse/BourseCriteresSociaux",component: BourseCritereSociauxComponent},
 
   // #### Logement ###
   { path: "Crous", component: CrousComponent },
-  { path: "Crous/leCrous", component: CrousNiv2Component }
+  { path: "Crous/leCrous", component: CrousNiv2Component },
+  { path: "LeBonCoin", component: LeBonCoinComponent },
+
+  // ### Santé ###
+  { path: "Ameli", component: AmeliComponent },
+  { path: "CentreSante", component: CentreSanteComponent },
+
+  // ### Associations ###
+  { path: "DistributionsAlimentaires", component: DistributionsAlimentairesComponent },
+  { path: "Soutien", component: SoutienComponent },
 ];
 
 @NgModule({
@@ -54,7 +75,16 @@ const appRoutes: Routes = [
     BourseErasmusComponent,
     CrousComponent,
     CrousNiv2Component,
-    WhoareweComponent
+    WhoareweComponent,
+    LeBonCoinComponent,
+    AmeliComponent,
+    CentreSanteComponent,
+    DistributionsAlimentairesComponent,
+    SoutienComponent,
+    AidesFinancieresComponent,
+    AidesLogementComponent,
+    AidesSocialesComponent,
+    CnousComponent,
   ],
   imports: [
     BrowserModule,
