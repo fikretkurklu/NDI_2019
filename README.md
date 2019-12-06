@@ -23,3 +23,5 @@ S'il trouve un topic concernant son problème, il peut cliquer sur ce topic et a
 S'il ne trouve pas de topic, il peut choisir entre :
 - chercher d'autres questions : cela le redirige sur le subreddit correspodant à la sous-catégorie choisie.
 - poster une question sur le subreddit : cela le redirige sur une page reddit lui permettant de poser une question sous forme de post dans le subreddit choisi.
+
+La branche de développement est la branche dev.
