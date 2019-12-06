@@ -1,7 +1,7 @@
 Etu'Room
 =================
 
-Etu'Room est un site accessible en production depuis ............. C'est un site qui regroupe plusieurs articles traitant de sujets diverses, déstinés à aider les étudiants dans leurs démarches administratives.
+Etu'Room est un site accessible en production depuis [ce site](http://51.83.252.127/). C'est un site qui regroupe plusieurs articles traitant de sujets diverses, déstinés à aider les étudiants dans leurs démarches administratives.
 Ce site est designé pour plusieurs types d'utilisateurs :
 - Les étudiants qui ont du mal avec les démarches administratives : le site leur propose différents articles pour les aiguiller dans ces différentes démarches.
 - Les étudiants étrangers : le site est accessible en anglais et en français.
