@@ -26,6 +26,7 @@ import { AidesFinancieresComponent } from './aides-financieres/aides-financieres
 import { AidesLogementComponent } from './aides-logement/aides-logement.component';
 import { AidesSocialesComponent } from './aides-sociales/aides-sociales.component';
 import { CnousComponent } from './cnous/cnous.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -35,6 +36,7 @@ const appRoutes: Routes = [
   { path: "", component: HomepageComponent },
   { path: "Bourse", component: BourseComponent },
   { path: "Whoarewe", component: WhoareweComponent },
+  {path : "Aboutus", component : AboutusComponent},
 
   // ### Aides Etudiantes###
   { path: "AidesFinancieres", component: AidesFinancieresComponent },
@@ -85,6 +87,7 @@ const appRoutes: Routes = [
     AidesLogementComponent,
     AidesSocialesComponent,
     CnousComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

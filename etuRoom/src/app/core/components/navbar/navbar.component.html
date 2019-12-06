@@ -14,9 +14,14 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Home<span class="sr-only">(current)</span></a
-        >
+        <a class="nav-link" routerLink="" routerLinkActive="active"
+          ><a class="navbar-brand" routerLink="" routerLinkActive="active">
+            <img
+              style="max-width:50px; margin-top: -7px;"
+              src="../../../../assets/Images/logo.png"
+              alt=""
+            /> </a
+        ></a>
       </li>
     </ul>
     <select #langselect (change)="translate.use(langselect.value)">
