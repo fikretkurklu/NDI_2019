@@ -29,7 +29,7 @@ const appRoutes: Routes = [
   { path: "", component: HomepageComponent },
   { path: "Bourse", component: BourseComponent },
   { path: "Whoarewe", component: WhoareweComponent },
-  {path: "ResultSearch", component : ResultSearchComponent}
+  {path: "ResultSearch", component : ResultSearchComponent},
 
   // ### ###
   { path: "Apl", component: APLComponent },
