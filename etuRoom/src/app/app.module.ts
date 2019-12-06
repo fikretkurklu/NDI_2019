@@ -14,11 +14,12 @@ import { BourseErasmusComponent } from './bourse-erasmus/bourse-erasmus.componen
 import { CrousComponent } from './crous/crous.component';
 import { CrousNiv2Component } from './crous-niv2/crous-niv2.component';
 import { WhoareweComponent } from './whoarewe/whoarewe.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 const appRoutes: Routes = [
   {path : "", component : HomepageComponent},
 
-  {path : "Whoarewe", component : WhoareweComponent},
+  {path : "Aboutus", component : AboutusComponent},
 
   // ### ###
   {path : "Apl", component : APLComponent},
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     BourseErasmusComponent,
     CrousComponent,
     CrousNiv2Component,
-    WhoareweComponent
+    WhoareweComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
